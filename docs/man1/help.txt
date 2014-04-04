@@ -1,0 +1,80 @@
+Cruce Game:
+Famous card game, similar to whist.
+
+No. of Players:
+1-4
+
+Type of Deck: 
+Each suit of value II, III, IV, IX, X and A (ace).
+
+Setup:
+Table.
+Players.
+Deck of cards.
+Score Point table.
+
+Goal:
+Achieve the Game Points before your opponent.
+
+Cards Distribution:
+In 4 player game, each player will get 6 cards, 0 cards on table (face down).
+In 3 player game, each player will get 8 cards, 0 cards on table (face down).
+In 2 player game, each player will get 8 cards, 8 cards on table (face down).
+
+Game Score Limits:
+11 Points.
+15 Points.
+21 Points.
+
+Round In A Game:
+On start of every round, each player will make a bid. After the process of
+bidding, the player/team with maximum bid will win the bidding. The bid
+winner will start the game and choose the trump by playing first card of his
+choice on table. Every player in the game need to put the card of that suit,
+the player with maximum value of card of same suit will get all the cards
+and win it. The winner will start it again and round continues. In case, the
+other player don't have the card of that particular suit, they need to play
+their trump. In case, they don't have trump, they can play any card. On
+finishing of all cards, the score is computed and compared against bid point
+or card points. Now if the bid point/s are achieved they will be awarded with
+same else the same is deducted from their game points score.
+
+Bidding Points:
+1 bid point is equal to 33 card points.
+2 bid point is equal to 66 card points.
+3 bid point is equal to 99 card points.
+4 bid point is equal to 132 card points.
+5 bid point is equal to 165 card points.
+6 bid point is equal to 198 card points.
+
+Card Points:
+II is worth of 2 card points.
+III is worth of 3 card points.
+IV is worth of 4 card points.
+IX is worth of 0 card points.
+X is worth of 10 card points.
+ACE is worth of 11 card points.
+
+Score Points:
+Tells the current score of the player/team.
+
+Game Points:
+Will decide the winner of game (11-15-21).
+
+Bonus Points:
+If a player has in hand a III and a IV of the same suit, they form a call.
+This is worth 20 or 40 card points(if the suit is trump). To make a call,
+it is necessary that the player who owns it to be the first in that round
+and to put on the table one of the two elements (the III or the IV).
+
+Strategies:
+Choose the bid wisely.
+Choose the trump wisely (the maximum no. of suit cards you have with higher
+values).
+Use team chat with your partner during game play.
+
+Bugs/Issues/Feedback:
+Contact us here: cruce-development@googlegroups.com
+Make sure you use the proper subject.
+
+
