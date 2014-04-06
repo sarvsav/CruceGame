@@ -1,6 +1,15 @@
 Cruce Game:
 Famous card game, similar to whist.
 
+CruceGame Usage:
+cruceGame [-hv]
+
+	-h, --help
+		Display help or current screen
+
+	-v, --version
+		Current Version of Cruce Game
+
 No. of Players:
 1-4
 
@@ -76,5 +85,3 @@ Use team chat with your partner during game play.
 Bugs/Issues/Feedback:
 Contact us here: cruce-development@googlegroups.com
 Make sure you use the proper subject.
-
-

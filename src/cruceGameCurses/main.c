@@ -9,9 +9,10 @@
 
 int CALLBACK WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow)
 #else
-int main()
+int main(int argc, char *argv[])
 #endif
-{
+{ 
+    cruceGameOptions(argc,argv);
     setlocale(LC_ALL, "");
     initscr();
     cbreak();
@@ -21,7 +22,7 @@ int main()
         printf("Your terminal does not support colors!");
         return 0;
     }
-
+   
     start_color();
     init_pair(1, COLOR_RED, COLOR_BLACK);
     refresh();
