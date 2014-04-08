@@ -5,7 +5,7 @@ CFLAGS = -std=c99 -Wall -DDEBUG
 lib_LTLIBRARIES = libCruceGame.la
 bin_PROGRAMS = cruceGame
 
-cruceGame_SOURCES = cruceGameCurses/main.c cruceGameCurses/cli.c
+cruceGame_SOURCES = cruceGameCurses/main.c cruceGameCurses/cli.c cruceGameCurses/gameLogic.c
 cruceGame_LDADD = libCruceGame.la
 cruceGame_LDFLAGS = -lncursesw
 
