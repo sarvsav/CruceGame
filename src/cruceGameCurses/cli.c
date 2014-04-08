@@ -614,7 +614,7 @@ void cruceGameOptions(int argc,char **argv)
                 break;
      
             default:
-                abort ();
+                exit(EXIT_FAILURE);
             }
         }
      
@@ -623,5 +623,6 @@ void cruceGameOptions(int argc,char **argv)
         while (optind < argc) {
             printf ("%s ", argv[optind++]);
         }
+        exit(EXIT_FAILURE);
     }
 }
