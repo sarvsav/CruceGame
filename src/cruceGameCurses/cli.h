@@ -122,36 +122,5 @@ int getScoreLimit();
  * @return int The size of the biggest name of a player in a round.
  */
 int printRoundTerminationMessage(struct Round *terminatedRound, int *oldScore);
-/**
- * @brief Prints the score differences between rounds.
- *
- * @param terminatedRound The round that just has finished.
- * @param oldScore Old score for every player before the terminated round. 
- *
- * @return int The size of the biggest name of a player in a round.
- */
 
- /**
-  * @brief Prints the help manual of cruce game to the screen
-  */
- void cruceGameUsage();
-
- /**
-  * @brief Prints the current running version of cruce game
-  */
- void cruceGameVersion();
-
- /**
-  * @brief Prints the invalid cli options provided
-  */
- void cruceGameInvalid();
-
- /**
-  * @brief
-  *
-  * @param argc Stores the count of number of argument
-  * @param argv Contains the value of arguments
-  */
- void cruceGameOptions(int argc,char **argv);
-
- #endif
+#endif
