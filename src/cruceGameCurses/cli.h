@@ -119,8 +119,8 @@ int getScoreLimit();
  *
  * @param terminatedRound The round that just has finished.
  * @param oldScore Old score for every player before the terminated round. 
- *
+ * @param gameScorePoints game points required to win the game.
  * @return int The size of the biggest name of a player in a round.
  */
-int printRoundTerminationMessage(struct Round *terminatedRound, int *oldScore);
+int printRoundTerminationMessage(struct Round *terminatedRound, int *oldScore,int gameScorePoints);
 

@@ -99,7 +99,7 @@ int main()
 
         game_updateScore(game, bidWinner);
 
-        printRoundTerminationMessage(game->round, oldScore);
+        printRoundTerminationMessage(game->round, oldScore,limitScore);
         getch();
 
         deck_deleteDeck(&deck);

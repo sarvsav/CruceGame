@@ -561,7 +561,7 @@ int getBiggestNameSize(struct Round *terminatedRound)
     return maxNameSize;
 }
 
-int printRoundTerminationMessage(struct Round *terminatedRound, int *oldScore)
+int printRoundTerminationMessage(struct Round *terminatedRound, int *oldScore,int gameScorePoints)
 {
     if(terminatedRound == NULL || terminatedRound->players == NULL)
         return ROUND_NULL;
@@ -579,18 +579,21 @@ int printRoundTerminationMessage(struct Round *terminatedRound, int *oldScore)
             " | (___   ___ ___  _ __ ___  | |_ __ _| |__ | | ___ \n"
              "  \\___ \\ / __/ _ \\| '__/ _ \\ | __/ _` | '_ \\| |/ _ \\\n"
              "  ____) | (_| (_) | | |  __/ | || (_| | |_) | |  __/\n"
-            " |_____/ \\___\\___/|_|  \\___|  \\__\\__,_|_.__/|_|\\___|\n\n\n");
+            " |_____/ \\___\\___/|_|  \\___|  \\__\\__,_|_.__/|_|\\___|\n\n\n\n\n\n");
+
+    printw("Score Points required to win the game: %d\n\n", gameScorePoints);
+    printw("Current Score Points:\n");
 
     for(int i = 0; i < MAX_GAME_PLAYERS; i++) {
         if(terminatedRound->players[i] != NULL) {
-            printw("%s", terminatedRound->players[i]->name); 
+            printw("Player: %s", terminatedRound->players[i]->name); 
             playersNameWidth = strlen(terminatedRound->players[i]->name);
 
             score = terminatedRound->players[i]->score - oldScore[i];         
             colorPair = (score > 0) ? 2 : 1;
 
             attron(COLOR_PAIR(colorPair));
-            printw("%+*d \n", scoreLineSize - playersNameWidth, score);
+            printw(" has score: %+*d \n", scoreLineSize - playersNameWidth, score);
             attroff(COLOR_PAIR(colorPair));
          
         }
