@@ -64,5 +64,8 @@ T12.4 round_removePlayerHand()
 T12.5 game_findTeam()
 T12.6 game_updateScore()
 
+T13. Parser and list of commands.
 
+T13.1 Create a list of commands required during gameplay.
+T13.2 Write a parser to parse those commands.
 
